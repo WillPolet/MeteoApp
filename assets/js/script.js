@@ -60,7 +60,7 @@ const displayWeather = (cityName) => {
                     //console.log(`Current time in ${zoneName}: ${currentHour}:${currentMinute}`);
 
 
-                    document.getElementById("hour").textContent = `Current time : ${currentHour}:${currentMinute}`
+                    document.getElementById("hour").textContent = `Current time : ${currentHour.toString().padStart(2,'0')}:${currentMinute.toString().padStart(2,'0')}`
 
                     fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${cityName}/${actualDate}/${sixDaysLater}?unitGroup=metric&iconSet=icons2&include=current&key=${APIKey[2]}&contentType=json`)
                     .then(response => response.json())
@@ -103,7 +103,7 @@ const displayWeather = (cityName) => {
                         for (let i = 1 ; i < forecastData["days"].length ; i++){ // i =1 bc we already display the day 0
                             let day = new Date(forecastData["days"][i]["datetimeEpoch"]*1000)
                             console.log(`Loop ${i} : ${day.getDate()}`)
-                            let dateInFuture = `${day.getDate()} / ${day.getMonth()+1} / ${day.getFullYear()}` 
+                            let dateInFuture = `${day.getDate().toString().padStart(2,'0')} / ${(day.getMonth()+1).toString().padStart(2,'0')} / ${day.getFullYear()}` 
                             day = day.getDay()
                             switch (day) {
                                 case 0:
