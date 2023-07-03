@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!--
+
+-->
+    <div id="search">
+        <input type="text" id="cityName" placeholder="Enter a city name">
+        <button id="button">Submit</button>
+    </div>
+    <div id="container">
+    <div id="weatherCard">
+        <div id="name">
+
+        </div>
+        <div id="logo">
+
+        </div>
+        <div id="temp" class="marginBottom">
+
+        </div>
+        <div class="marginBottom">
+            <p id="time"></p>
+        </div>
+        <div id="hour" class="marginBottom">
+
+        </div>
+        <div id="sunrise" class="marginBottom">
+
+        </div>
+        <div id="sunset" class="marginBottom">
+
+        </div>
+        <div id="min-max" class="marginBottom">
+            <div id="min">
+
+            </div>
+            <div id="max">
+
+            </div>
+        </div>
+        <div id="wind-pressure" class="marginBottom">
+            
+        </div>
+    </div>
+    <div id="next3Days">
+        <div id="day1" class="futureDay">
+            <div class="inline">
+                <h3 id="day1Day"></h3>
+                <h4 id="day1Date"></h4>
+            </div>
+            <div id="day1Info" class="info">
+                <div id="day1logo" class="flogo"></div>
+                <div id="day1Min"></div>
+                <div id="day1Max"></div>
+            </div>
+            <div id="day1Desc" class="desc"></div>
+        </div>
+
+        <div id="day2" class="futureDay">
+            <div class="inline">
+                <h3 id="day2Day"></h3>
+                <h4 id="day2Date"></h4>
+            </div>
+            <div id="day2Info" class="info">
+                <div id="day2logo" class="flogo"></div>
+                <div id="day2Min"></div>
+                <div id="day2Max"></div>
+            </div>
+            <div id="day2Desc" class="desc"></div>
+        </div>
+
+        <div id="day3" class="futureDay">
+            <div class="inline">
+                <h3 id="day3Day"></h3>
+                <h4 id="day3Date"></h4>
+            </div>
+            <div id="day3Info" class="info">
+                <div id="day3logo" class="flogo"></div>
+                <div id="day3Min"></div>
+                <div id="day3Max"></div>
+            </div>
+            <div id="day3Desc" class="desc"></div>
+        </div>
+    </div>
+
+    <div id="next6Days">
+        <div id="day4" class="futureDay">
+            <div class="inline">
+                <h3 id="day4Day"></h3>
+                <h4 id="day4Date"></h4>
+            </div>
+            <div id="day4Info" class="info">
+                <div id="day4logo" class="flogo"></div>
+                <div id="day4Min"></div>
+                <div id="day4Max"></div>
+            </div>
+            <div id="day4Desc" class="desc"></div>
+        </div>
+
+        <div id="day5" class="futureDay">
+            <div class="inline">
+                <h3 id="day5Day"></h3>
+                <h4 id="day5Date"></h4>
+            </div>
+            <div id="day5Info" class="info">
+                <div id="day5logo" class="flogo"></div>
+                <div id="day5Min"></div>
+                <div id="day5Max"></div>
+            </div>
+            <div id="day5Desc" class="desc"></div>
+        </div>
+
+        <div id="day6" class="futureDay">
+            <div class="inline">
+                <h3 id="day6Day"></h3>
+                <h4 id="day6Date"></h4>
+            </div>
+            <div id="day6Info" class="info">
+                <div id="day6logo" class="flogo"></div>
+                <div id="day6Min"></div>
+                <div id="day6Max"></div>
+            </div>
+            <div id="day6Desc" class="desc"></div>
+        </div>
+    </div>
+    </div>
+    <script src="./assets/js/script.js" type="module"></script>
+</body>
+</html>
