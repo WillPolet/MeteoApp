@@ -27,7 +27,7 @@ const displayWeather = (cityName) => {
     }
     else{
         // We will begin with 1 response, after maybe that we will use up to 5 responses.
-        fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${APIKey[0]}`)
+        fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${APIKey[0]}`)
         .then(response => response.json())
         .then(data =>{
             if (data.length == 0){
